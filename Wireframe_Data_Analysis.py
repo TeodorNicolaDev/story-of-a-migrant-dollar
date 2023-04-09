@@ -31,11 +31,11 @@ To begin with, we will read the provided csv files into dataframes in pandas.
 current_file_path = os.path.dirname(os.path.abspath('__file__'))
 
 main_table = pd.read_csv(current_file_path + '/Central_American_Survey_Original/main_table.csv')
-hh_roster = pd.read_csv('/Users/teodornicola-antoniu/Desktop/Desktop - Teodor’s MacBook Pro (2)/Spring2023/Classes/6.C85 Data Visualizations/Final Project/story-of-a-migrant-dollar/Central_American_Survey_Original/hh_roster.csv')
-mig_ext_roster = pd.read_csv('/Users/teodornicola-antoniu/Desktop/Desktop - Teodor’s MacBook Pro (2)/Spring2023/Classes/6.C85 Data Visualizations/Final Project/story-of-a-migrant-dollar/Central_American_Survey_Original/mig_ext_roster.csv')
-mig_int_roster = pd.read_csv('/Users/teodornicola-antoniu/Desktop/Desktop - Teodor’s MacBook Pro (2)/Spring2023/Classes/6.C85 Data Visualizations/Final Project/story-of-a-migrant-dollar/Central_American_Survey_Original/mig_int_roster.csv')
-mig_pend_roster = pd.read_csv('/Users/teodornicola-antoniu/Desktop/Desktop - Teodor’s MacBook Pro (2)/Spring2023/Classes/6.C85 Data Visualizations/Final Project/story-of-a-migrant-dollar/Central_American_Survey_Original/mig_pend_roster.csv')
-answer_lookup = pd.read_excel('/Users/teodornicola-antoniu/Desktop/Desktop - Teodor’s MacBook Pro (2)/Spring2023/Classes/6.C85 Data Visualizations/Final Project/story-of-a-migrant-dollar/Central_American_Survey_Original/look-up table.xlsx', sheet_name= 'answer_lookup')
+hh_roster = pd.read_csv(current_file_path + '/Central_American_Survey_Original/hh_roster.csv')
+mig_ext_roster = pd.read_csv(current_file_path + '/Central_American_Survey_Original/mig_ext_roster.csv')
+mig_int_roster = pd.read_csv(current_file_path + '/Central_American_Survey_Original/mig_int_roster.csv')
+mig_pend_roster = pd.read_csv(current_file_path + '/Central_American_Survey_Original/mig_pend_roster.csv')
+answer_lookup = pd.read_excel(current_file_path + '/Central_American_Survey_Original/look-up table.xlsx', sheet_name= 'answer_lookup')
 
 '''
 Step 2:
