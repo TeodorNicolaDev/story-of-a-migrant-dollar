@@ -261,3 +261,44 @@ find_Oscar_df = extended_main[find_Oscar_cols]
 
 
 
+
+
+
+###############################################################################
+#Pre-processing of mig_ext_roster
+###############################################################################
+
+mig_ext_country_dict = {1:'United States of America',
+                        2:'Canada',
+                        3:'Australia',
+                        4:'Spain',
+                        5:'Italy',
+                        6:'Mexico',
+                        7:'Guatemala',
+                        8:'Costa Rica',
+                        9:'Honduras',
+                        10:'The Savior',
+                        11:'Nicaragua',
+                        12:'Belize',
+                        13:'France',
+                        14:'Panama',
+                        15:'Colombia',
+                        16:'Ecuador',
+                        17:'Peru',
+                        18:'UK',
+                        19:'chili',
+                        20:'Brazil',
+                        21:'Other',
+                        99:'NS / NR',
+                        }
+
+
+
+extended_mig_ext_roster = mig_ext_roster.replace({"mig_ext_country": mig_ext_country_dict})
+extended_mig_ext_roster.to_excel(current_file_path + '/extended_mig_ext_roster.xlsx')
+
+
+
+
+
+
